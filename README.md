@@ -12,11 +12,15 @@ Technic
 Defaults:
 -----------
 * xmpp-ftw host: http://localhost:3000
-* Login to xmpp server with username:"test1" and password:"bbb"
+* Login to xmpp server with jid:"test1@localhost" and password:"bbb"
 * pubsub server:"pubsub.localhost" node:"test2"
 
 Install
 ---------
 * You need xmpp-ftw running
 * The jabber server must have pubsub implemented
-* Testen with ejabberd
+* Tested with ejabberd
+
+Test
+----
+Open page in two browser windows, they should be in sync.

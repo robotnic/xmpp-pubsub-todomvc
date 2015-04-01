@@ -1,0 +1,38 @@
+<div class="xmppform">
+<div>
+<h3>{{formdata.title}}</h3>
+<h4>{{formdata.instructions}}</h4>
+<table>
+<tr ng-repeat="field in formdata">
+<td ng-if="field.label">{{field.label}}</td>
+<td ng-if="!field.label">{{field.var}}</td>
+<td>
+<input type="password" ng-model="field.value" ng-if="field.type=='text-private'"/>
+<input ng-model="field.value" ng-if="field.type=='text-single'"/>
+<textarea ng-model="field.value" ng-if="field.type=='text-multi'"></textarea>
+<input ng-model="field.value" ng-if="!field.type"/>
+<input type="checkbox" ng-model="field.value" ng-if="field.type=='boolean'"/>
+
+<select ng-model="field.value" ng-if="field.type=='list-single'" ng-selected="field.value">
+<option  ng-repeat="item in field.options" value="{{item.value}}" ng-selected="field.value==item.value">
+<span ng-if="item.label">{{item.label}}</span>
+<span ng-if="!item.label">{{item.value}}</span>
+</option>
+</select>
+
+<select ng-model="field.value" ng-if="field.type=='list-multi'" ng-selected="field.value">
+<option  ng-repeat="item in field.options" value="item.value" ng-selected="field.value==item.value">
+<span ng-if="item.label">{{item.label}}</span>
+<span ng-if="!item.label">{{item.value}}</span>
+</option>
+</select>
+
+
+
+</td>
+</tr>
+</table>
+<button ng-click="save()">save</button><a ui-sref="index"><button ng-click="close()">cancel</button></a>
+</div>
+</div>
+
