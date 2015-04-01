@@ -1,0 +1,42 @@
+{
+  "name": "angular-xmpp-services",
+  "authors": [
+    "bernhard zwischenbrgger"
+  ],
+  "version": "0.1.6",
+  "main": [
+    "bin/assets/angular-xmpp-services-0.1.5.js"
+  ],
+  "ignore": [
+    ".*",
+    "./*",
+    "src",
+    "build",
+    "vendor",
+    "npm_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:robotnic/angular-xmpp-services.git"
+  },
+  "dependencies": {
+    "angular-strap": "~2.1.6",
+    "angular-markdown-directive": "~0.3.1",
+    "angular-bootstrap": "~0.12.0",
+    "showdown": "~0.3.4",
+    "jquery": "~2.1.3",
+    "modernizr": "~2.8.3",
+    "angular-moment": "*",
+    "json-formatter": "*"
+  },
+  "homepage": "https://github.com/robotnic/angular-xmpp-services",
+  "_release": "0.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.6",
+    "commit": "00402f5b0166877589d9c427f5c0c61ff6bade95"
+  },
+  "_source": "git://github.com/robotnic/angular-xmpp-services.git",
+  "_target": "~0.1.6",
+  "_originalSource": "angular-xmpp-services"
+}
